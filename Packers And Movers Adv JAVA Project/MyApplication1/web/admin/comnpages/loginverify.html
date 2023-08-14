@@ -1,0 +1,22 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<?php
+#session_start();
+if(!isset($_SESSION['uid']))
+{
+    /*	echo '<script type="text/javascript">
+                function delayer(){
+                    window.location = "login.jsp?err=l4g0v0f";
+                    }
+                setTimeout("delayer()", 1);
+                </script>';
+    */
+   
+    
+header('location:login.php?err=l4g0v0f');
+}
+
+?>
